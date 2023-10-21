@@ -1,0 +1,47 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean class="com.scs.entity.Engine" id="e1">
+		<constructor-arg value="101"></constructor-arg>
+		<constructor-arg value="BS6"></constructor-arg>
+		<constructor-arg value="12"></constructor-arg>
+	</bean>
+
+	<bean class="com.scs.entity.Engine" id="e2">
+		<constructor-arg value="102"></constructor-arg>
+		<constructor-arg value="iVtec"></constructor-arg>
+		<constructor-arg value="16"></constructor-arg>
+	</bean>
+
+
+	<bean class="com.scs.entity.MusicSystem" id="ms1">
+		<property name="msno">
+			<value>111</value>
+		</property>
+
+		<property name="brand">
+			<value>Boat</value>
+		</property>
+
+		<property name="cost">
+			<value>5000</value>
+		</property>
+		
+		<property name="mfg">
+		<list>
+		<value>Maruti</value>
+		<value>Honda</value>
+		<value>Mahindra</value>
+		</list>
+		</property>
+		
+		<property name="color">
+		<list>
+		<value>Red</value>
+		<value>Black</value>
+		<value>Blue</value>
+		</list>
+		</property>
+	</bean>
+</beans>
